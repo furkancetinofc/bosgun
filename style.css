@@ -19,7 +19,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #004d99; /* Kurumsal bir renk */
+    color: #004d99; 
     margin-bottom: 10px;
     font-size: 1.8em;
 }
@@ -54,7 +54,7 @@ input[type="number"], select {
 #hesaplaBtn {
     width: 100%;
     padding: 12px;
-    background-color: #ff9900; /* THY tarzında turuncu */
+    background-color: #ff9900; /* Turuncu */
     color: white;
     border: none;
     border-radius: 6px;
