@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uçucu Ekip Boş Gün Hesaplayıcı</title>
+    <title>Uçucu Ekip Boş Gün Hesaplayıcı (Revize)</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Uçucu Ekip Boş Gün Hesaplayıcı</h1>
-        <p class="description">Bu araç, takvim ayınızdaki rapor ve mazeret izinlerinize göre hak ettiğiniz "Kullanılabilecek Boş Gün" sayısını hesaplar.</p>
+        <p class="description">Ay seçiminize ve rapor/mazeret izinlerinize göre hak ettiğiniz "Kullanılabilecek Boş Gün" sayısını hesaplar.</p>
 
         <div class="input-group">
-            <label for="ayGunSayisi">Ay Kaç Gün Çekiyor?</label>
-            <select id="ayGunSayisi" required>
-                <option value="">-- Ay Gün Sayısını Seçiniz --</option>
-                <option value="31">31 Gün</option>
-                <option value="30">30 Gün</option>
-                <option value="29">29 Gün</option>
-                <option value="28">28 Gün</option>
+            <label for="aySecimi">Hesaplama Yapılacak Ayı Seçiniz:</label>
+            <select id="aySecimi" required>
+                <option value="">-- Ay Seçiniz --</option>
+                <option value="Ocak">Ocak (31)</option>
+                <option value="Subat">Şubat (29/28)</option>
+                <option value="Mart">Mart (31)</option>
+                <option value="Nisan">Nisan (30)</option>
+                <option value="Mayis">Mayıs (31)</option>
+                <option value="Haziran">Haziran (30)</option>
+                <option value="Temmuz">Temmuz (31)</option>
+                <option value="Agustos">Ağustos (31)</option>
+                <option value="Eylul">Eylül (30)</option>
+                <option value="Ekim">Ekim (31)</option>
+                <option value="Kasim">Kasım (30)</option>
+                <option value="Aralik">Aralık (31)</option>
             </select>
         </div>
 
@@ -33,7 +41,7 @@
             </div>
 
         <p class="not">
-            *Hesaplama, verilen tablo ve "31 çeken aylarda 1 gün bonus" kuralına göre yapılmaktadır.
+            *Hesaplama, THY A.O. Uçucu Ekipler Takvim Ayında Çalışılan Gün ve Kullanılabilecek Boş Gün Oran Tablosu (EK-5) baz alınarak yapılmıştır.
         </p>
     </div>
 
