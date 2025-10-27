@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uçucu Ekip Boş Gün Hesaplayıcı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Uçucu Ekip Boş Gün Hesaplayıcı</h1>
+        <p class="description">Bu araç, takvim ayınızdaki rapor ve mazeret izinlerinize göre hak ettiğiniz "Kullanılabilecek Boş Gün" sayısını hesaplar.</p>
+
+        <div class="input-group">
+            <label for="ayGunSayisi">Ay Kaç Gün Çekiyor?</label>
+            <select id="ayGunSayisi" required>
+                <option value="">-- Ay Gün Sayısını Seçiniz --</option>
+                <option value="31">31 Gün</option>
+                <option value="30">30 Gün</option>
+                <option value="29">29 Gün</option>
+                <option value="28">28 Gün</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="izinGunSayisi">Ay İçinde Alınan Toplam Rapor/Mazeret İzni (Gün):</label>
+            <input type="number" id="izinGunSayisi" placeholder="Örn: 2" min="0" required>
+        </div>
+
+        <button id="hesaplaBtn">Boş Gün Hakkını Hesapla</button>
+
+        <div id="sonuc" class="sonuc-kutusu">
+            </div>
+
+        <p class="not">
+            *Hesaplama, verilen tablo ve "31 çeken aylarda 1 gün bonus" kuralına göre yapılmaktadır.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

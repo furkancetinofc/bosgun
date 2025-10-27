@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ebee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #004d99; /* Kurumsal bir renk */
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#hesaplaBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff9900; /* THY tarzında turuncu */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+#hesaplaBtn:hover {
+    background-color: #e68a00;
+}
+
+.sonuc-kutusu {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 2px dashed #004d99;
+    min-height: 25px;
+    color: #004d99;
+    background-color: #f0f8ff;
+}
+
+.error {
+    background-color: #ffdddd;
+    color: #cc0000;
+    border: 2px solid #cc0000;
+}
+
+.not {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #999;
+    text-align: center;
+}
